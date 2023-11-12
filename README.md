@@ -15,7 +15,7 @@ Can easily be edited for a nice and portable scrip for testing
 
 Setup will create a market at the onion
 
-knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion
+knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion
 
 a monero wallet named test with a password of ""
 
@@ -55,4 +55,19 @@ then all done :)
 
 You can now go and visit 
 
+knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion
+
+Demo site will be here http://knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion/
+
+Script onions
+
+main test and demo onion
+
 knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion
+
+onion1
+knuliiymaayvvdtpz35crg2gplguanhuytp5s7abilxi2h6kmsr5vfyd.onion
+onion2
+knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion
+onion3
+knulii3cwkyuhdqtv5bhmy4gyeycqz6hfsr2hr7fxp635ocug5pe27id.onion

@@ -18,7 +18,7 @@ sudo service nginx restart
 sleep 10
 cp -r torrc /usr/local/etc/tor/torrc
 mkdir /usr/local/etc/tor/hidden_service
-cp -r onion/* /usr/local/etc/tor/hidden_service
+cp -r onion1/* /usr/local/etc/tor/hidden_service
 chmod 600 /usr/local/etc/tor/hidden_service
 tor --list-modules
 sleep 10

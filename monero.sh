@@ -5,7 +5,7 @@ sleep 1
 BLUE='\033[1;34m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-printf "\r\nProvided by your lovely ${BLUE}knulii${NC} from here. \r\n"
+printf "\r\nProvided by your lovely ${BLUE}knulii${NC} \r\n"
 sleep 5
 
 wget https://downloads.getmonero.org/cli/monero-linux-x64-v0.18.3.1.tar.bz2
@@ -31,7 +31,7 @@ screen -r "rpcwallet" -X stuff $'./monero-wallet-rpc --rpc-login user1:pA3sw0Rd 
 sleep 5
 
 echo "All Done!!!"
-echo "knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion should be live"
+echo "knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion should be live"
 echo "Will take around 8-10 hours to download monero on a server with 2 vCPUs and 4gb of ram"
 
 

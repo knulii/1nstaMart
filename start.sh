@@ -5,7 +5,7 @@ sleep 1
 BLUE='\033[1;34m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-printf "\r\nProvided by your lovely ${BLUE}knulii${NC} from here. \r\n"
+printf "\r\nProvided by the awesome ${BLUE}knulii${NC}\r\n"
 echo "Make a new root Linux password"
 passwd
 
