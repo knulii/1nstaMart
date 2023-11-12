@@ -55,7 +55,7 @@ then all done :)
 
 You can now go and visit 
 
-knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion
+knuliiymaayvvdtpz35crg2gplguanhuytp5s7abilxi2h6kmsr5vfyd.onion
 
 Demo site will be here http://knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion/
 

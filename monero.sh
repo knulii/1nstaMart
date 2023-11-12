@@ -31,7 +31,7 @@ screen -r "rpcwallet" -X stuff $'./monero-wallet-rpc --rpc-login user1:pA3sw0Rd 
 sleep 5
 
 echo "All Done!!!"
-echo "knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion should be live"
+echo "knuliiymaayvvdtpz35crg2gplguanhuytp5s7abilxi2h6kmsr5vfyd.onion should be live"
 echo "Will take around 8-10 hours to download monero on a server with 2 vCPUs and 4gb of ram"
 
 
