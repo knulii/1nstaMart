@@ -1,0 +1,21 @@
+CookieAuthentication 1
+MetricsPortPolicy accept 127.0.0.1
+
+RunAsDaemon 1
+
+HiddenServiceDir /usr/local/etc/tor/hidden_service
+DataDirectory /usr/local/etc/tor/
+HiddenServiceVersion 3
+HiddenServicePort 80 127.0.0.1:8080
+
+HiddenServicePoWDefensesEnabled 1
+HiddenServicePoWQueueRate 2
+HiddenServicePoWQueueBurst 4
+
+HardwareAccel 1
+
+SocksPort 0
+HiddenServiceDir /usr/local/etc/tor/mo
+HiddenServicePort 6667 127.0.0.1:6667
+HiddenServicePort 22 127.0.0.1:22
+ControlPort 127.0.0.1:6667

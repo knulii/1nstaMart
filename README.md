@@ -1,0 +1,58 @@
+A sloppy yet simple script to set up an 1nstaMart for easy testing
+
+will clean it up someday, but for now it works ;)
+
+This script will install eckmar3, an updated eckmar based market from head to toe:
+
+tor 0.4.8.1
+php 8.1 
+laravel 9
+elasticsearch 6
+
+Highly scripted and only tested on Ubuntu 22.04
+
+Can easily be edited for a nice and portable scrip for testing
+
+Setup will create a market at the onion
+
+knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion
+
+a monero wallet named test with a password of ""
+
+a mysql database admin account for the market:
+
+    user = test 
+
+    password = pA3sw0Rd
+
+  and a linux user with the name user1, you will enter the passwd in the the script  
+
+to run, start as root with a fresh vps...
+
+    git clone https://github.com/knulii/1nstaMart.git
+
+    cd 1nstaMart
+
+    ./start.sh
+
+follow prompts
+
+
+will complete with 
+
+user1@---:/root$ 
+
+Then command 
+
+    cd
+
+    cd 1nstaMart
+
+    ./fini.sh
+
+a couple more prompts
+then all done :)
+
+You can now go and visit 
+
+knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion
