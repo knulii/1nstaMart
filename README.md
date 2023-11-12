@@ -66,8 +66,15 @@ main test and demo onion
 knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion
 
 onion1
+
 knuliiymaayvvdtpz35crg2gplguanhuytp5s7abilxi2h6kmsr5vfyd.onion
+
 onion2
+
 knuliiu2zxsqtxy6alotipvdr5wb2bd6q42fktgv6tli6qxiqdohklqd.onion
+
 onion3
+
 knulii3cwkyuhdqtv5bhmy4gyeycqz6hfsr2hr7fxp635ocug5pe27id.onion
+
+You may need to check that the onion1 is available. If not, add your own to onion1 or change line 21 in torit.sh to onion2 or onion3
