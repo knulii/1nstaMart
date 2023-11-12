@@ -48,7 +48,6 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 composer update
-composer require laravel/helpers
 composer install
 npm install
 npm run prod
