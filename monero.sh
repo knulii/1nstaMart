@@ -14,6 +14,8 @@ tar -xf monero-linux-x64-v0.18.3.1.tar.bz2
 cp -r monero-x86_64-linux-gnu-v0.18.3.1 /home/user1/monero
 mv test /home/user1/monero/test
 mv test.keys /home/user1/monero/test.keys
+sudo chmod 777 /home/user1/monero/test.keys
+sudo chmod 777 /home/user1/monero/test
 cd ..
 
 (crontab -l 2>/dev/null; echo "@reboot sleep 10 && cd ./1/moneroboot.sh") | crontab -
