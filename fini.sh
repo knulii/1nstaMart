@@ -56,7 +56,6 @@ CACHE_DRIVER=redis
 echo "Almost Done!!!"
 php artisan migrate
 php artisan storage:link
-sudo chmod 777 /var/www/eckmar3/storage/logs/laravel.log
 sudo service nginx restart
 
 
