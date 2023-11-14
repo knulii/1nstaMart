@@ -9,9 +9,10 @@ tar -xf tor-0.4.8.1-alpha.tar.gz
 cd tor-0.4.8.1-alpha
 ./configure --enable-gpl && make -j12
 make install
-cd ..
 
+cd ..
 apt-get update
+cd ..
 
 cp -r nginx/default /etc/nginx/sites-available/
 sudo service nginx restart
