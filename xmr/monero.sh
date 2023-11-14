@@ -16,7 +16,7 @@ mv test /home/user1/monero/test
 mv test.keys /home/user1/monero/test.keys
 sudo chmod 777 /home/user1/monero/test.keys
 sudo chmod 777 /home/user1/monero/test
-cd ..
+cd
 
 (crontab -l 2>/dev/null; echo "@reboot sleep 10 && cd 1nstaMart/xmr && ./moneroboot.sh") | crontab -
 

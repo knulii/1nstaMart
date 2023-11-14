@@ -40,7 +40,7 @@ sudo mkdir /var/www/eckmar/storage/public/products
 sudo chmod -R 755 /var/www/eckmar/storage/public/products
 sudo chgrp -R www-data /var/www/eckmar/storage/public/products
 sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
-
+sudo chmod 777 /var/www/eckmar/composer.lock
 
 composer update
 composer install
