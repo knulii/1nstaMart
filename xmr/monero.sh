@@ -12,8 +12,8 @@ wget https://downloads.getmonero.org/cli/monero-linux-x64-v0.18.3.1.tar.bz2
 tar -xf monero-linux-x64-v0.18.3.1.tar.bz2
 
 cp -r monero-x86_64-linux-gnu-v0.18.3.1 /home/user1/monero
-mv xmr/test /home/user1/monero/test
-mv xmr/test.keys /home/user1/monero/test.keys
+mv test /home/user1/monero/test
+mv test.keys /home/user1/monero/test.keys
 sudo chmod 777 /home/user1/monero/test.keys
 sudo chmod 777 /home/user1/monero/test
 cd ..
