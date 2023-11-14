@@ -6,7 +6,6 @@ echo "Lets finish this"
 sleep 5
 
 sudo chmod -R uga+rwx /home/user1/1nstaMart
-sudo chmod 777 /home/user1/1nstaMart
 sudo mv .env /var/www/eckmar/
 
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.0.0.deb
