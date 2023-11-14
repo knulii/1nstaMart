@@ -22,7 +22,9 @@ mysql -e "CREATE DATABASE 1nstaMart_db DEFAULT CHARACTER SET utf8 COLLATE utf8_u
 mysql -e "CREATE USER 'user1'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pA3sw0Rd!!lmnop/';"
 mysql -e "GRANT ALL PRIVILEGES ON * . * TO 'user1'@'localhost';"
 mysql -e "FLUSH PRIVILEGES;"
-mysql 1nstaMart_db < 1nstaMart_db.sql
+
+echo "mysql 1nstaMart_db < 1nstaMart_db.sql"
+
 sudo service mysql restart
 
 sudo apt install software-properties-common
@@ -63,5 +65,5 @@ sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
 cp -fr nginx/default /etc/nginx/sites-available/default
 
 cd 
-cd 1nstaMart
+cd 1nstaMart/tor
 ./torit.sh

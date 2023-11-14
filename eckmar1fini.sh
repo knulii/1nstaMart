@@ -65,7 +65,7 @@ sudo service nginx restart
 
 
 cd
-cd 1nstaMart
+cd 1nstaMart/xmr
 ./monero.sh
 
 
