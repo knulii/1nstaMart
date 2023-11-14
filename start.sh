@@ -10,7 +10,6 @@ echo "Make a new root Linux password"
 passwd
 
 git clone https://github.com/knulii/eckmar.git -b v3.0
-sudo chmod -R ug+rwx eckmar
 sudo apt update && apt upgrade -y
 
 sudo apt-get install nginx -y
