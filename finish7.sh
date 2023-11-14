@@ -5,10 +5,9 @@ echo "Lets finish this"
 sudo tor
 sleep 5
 
+sudo chmod -R uga+rwx /home/user1/1nstaMart
 git clone https://github.com/knulii/eckmar.git -b v3.0
 sudo mv eckmar /var/www/eckmar/
-
-sudo chmod -R uga+rwx /home/user1/1nstaMart
 sudo mv .env /var/www/eckmar/
 sudo mv nginx/default1 /etc/nginx/sites-available/default
 
