@@ -25,7 +25,7 @@ sudo systemctl restart redis.service
 
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
-sudo apt-get install libpng-dev
+sudo apt-get install libpng-dev -y
 
 cd /var/www/eckmar
 
