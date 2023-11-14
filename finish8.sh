@@ -5,6 +5,9 @@ echo "Lets finish this"
 
 sleep 5
 
+git clone https://github.com/knulii/eckmar.git -b v3.1
+sudo mv eckmar /var/www/eckmar/
+
 sudo chmod -R uga+rwx /home/user1/1nstaMart
 sudo mv .env /var/www/eckmar/
 
@@ -41,7 +44,6 @@ sudo mkdir /var/www/eckmar/storage/public/products
 sudo chmod -R 755 /var/www/eckmar/storage/public/products
 sudo chgrp -R www-data /var/www/eckmar/storage/public/products
 sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
-sudo chmod 777 /var/www/eckmar/composer.lock
 
 composer update
 composer install

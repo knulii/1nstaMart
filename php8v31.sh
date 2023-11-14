@@ -9,8 +9,6 @@ printf "\r\nProvided by the awesome ${BLUE}knulii${NC}\r\n"
 echo "Make a new root Linux password"
 passwd
 
-git clone https://github.com/knulii/eckmar.git -b v3.1
-sudo chmod -R uga+rwx eckmar
 sudo apt update && apt upgrade -y
 
 sudo apt-get install nginx -y
@@ -55,20 +53,8 @@ php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 cd ..
 
-sudo mv eckmar /var/www/eckmar/
-sudo chown -R www-data:www-data /var/www/eckmar/public
-sudo chmod 755 /var/www
-sudo chmod -R 755 /var/www/eckmar/bootstrap/cache
-sudo chmod -R 755 /var/www/eckmar/storage
-sudo chown -R $USER:www-data /var/www/eckmar/storage
-sudo chown -R $USER:www-data /var/www/eckmar/bootstrap/cache
-sudo chmod -R 775 /var/www/eckmar/storage
-sudo chmod -R 775 /var/www/eckmar/bootstrap/cache
-sudo mkdir /var/www/eckmar/storage/public/
-sudo mkdir /var/www/eckmar/storage/public/products
-sudo chmod -R 755 /var/www/eckmar/storage/public/products
-sudo chgrp -R www-data /var/www/eckmar/storage/public/products
-sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
+
+
 
 cp -fr nginx/default /etc/nginx/sites-available/default
 
