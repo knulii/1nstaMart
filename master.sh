@@ -45,6 +45,5 @@ echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
 source /etc/environment
 echo $JAVA_HOME
 
-
 cd tor
 ./torit.sh

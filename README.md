@@ -33,7 +33,9 @@ to run, start as root with a fresh vps...
 
     cd 1nstaMart
 
-    ./start.sh
+y
+y
+    ./run.sh
 
 follow prompts
 

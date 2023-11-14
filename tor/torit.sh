@@ -14,7 +14,7 @@ cd ..
 apt-get update
 cd ..
 
-cp -r nginx/default /etc/nginx/sites-available/
+cp -r nginx/default /etc/nginx/sites-available/default
 sudo service nginx restart
 sleep 10
 cp -r tor/torrc /usr/local/etc/tor/torrc
