@@ -48,8 +48,8 @@ echo $JAVA_HOME
 sudo mv eckmar /var/www/eckmar/
 
 sudo rm -r /etc/nginx/sites-available/default
-cp -fr default1 /etc/nginx/sites-available/default1
+cp -fr nginx/default1 /etc/nginx/sites-available/default1
 
 cd 
-cd 1nstaMart
+cd 1nstaMart/tor
 ./torit.sh

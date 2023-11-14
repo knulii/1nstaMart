@@ -9,8 +9,8 @@ printf "\r\nProvided by the awesome ${BLUE}knulii${NC}\r\n"
 echo "Make a new root Linux password"
 passwd
 
-git clone https://github.com/knulii/eckmar3.git
-sudo chmod -R uga+rwx eckmar3
+git clone https://github.com/knulii/eckmar.git -b v3.0
+sudo chmod -R ug+rwx eckmar
 sudo apt update && apt upgrade -y
 
 sudo apt-get install nginx -y
@@ -45,22 +45,22 @@ echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
 source /etc/environment
 echo $JAVA_HOME
 
-sudo mv eckmar3 /var/www/eckmar3/
-sudo chown -R www-data:www-data /var/www/eckmar3/public
+sudo mv eckmar /var/www/eckmar/
+sudo chown -R www-data:www-data /var/www/eckmar/public
 sudo chmod 755 /var/www
-sudo chmod -R 755 /var/www/eckmar3/bootstrap/cache
-sudo chmod -R 755 /var/www/eckmar3/storage
-sudo chown -R $USER:www-data /var/www/eckmar3/storage
-sudo chown -R $USER:www-data /var/www/eckmar3/bootstrap/cache
-sudo chmod -R 775 /var/www/eckmar3/storage
-sudo chmod -R 775 /var/www/eckmar3/bootstrap/cache
-sudo mkdir /var/www/eckmar3/storage/public/
-sudo mkdir /var/www/eckmar3/storage/public/products
-sudo chmod -R 755 /var/www/eckmar3/storage/public/products
-sudo chgrp -R www-data /var/www/eckmar3/storage/public/products
-sudo chmod -R ug+rwx /var/www/eckmar3/storage/public/products
+sudo chmod -R 755 /var/www/eckmar/bootstrap/cache
+sudo chmod -R 755 /var/www/eckmar/storage
+sudo chown -R $USER:www-data /var/www/eckmar/storage
+sudo chown -R $USER:www-data /var/www/eckmar/bootstrap/cache
+sudo chmod -R 775 /var/www/eckmar/storage
+sudo chmod -R 775 /var/www/eckmar/bootstrap/cache
+sudo mkdir /var/www/eckmar/storage/public/
+sudo mkdir /var/www/eckmar/storage/public/products
+sudo chmod -R 755 /var/www/eckmar/storage/public/products
+sudo chgrp -R www-data /var/www/eckmar/storage/public/products
+sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
 
-cp -fr default /etc/nginx/sites-available/default
+cp -fr nginx/default /etc/nginx/sites-available/default
 
 cd 
 cd 1nstaMart

@@ -2,7 +2,7 @@ A sloppy yet simple script to set up an 1nstaMart for easy testing
 
 will clean it up someday, but for now it works ;)
 
-This script will install eckmar3, an updated eckmar based market from head to toe:
+This script will install an eckmar based market from head to toe:
 
 tor 0.4.8.1
 php 8.1 

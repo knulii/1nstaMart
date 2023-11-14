@@ -25,6 +25,7 @@ sudo systemctl restart redis.service
 
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
+sudo apt-get install libpng-dev
 
 cd /var/www/eckmar
 
@@ -56,6 +57,10 @@ CACHE_DRIVER=redis
 echo "Almost Done!!!"
 php artisan migrate
 php artisan storage:link
+
+sudo rm -r /etc/nginx/sites/available/default
+sudo mv /etc/nginx/sites/available/default1 /etc/nginx/sites/available/default
+
 sudo service nginx restart
 
 

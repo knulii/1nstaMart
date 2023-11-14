@@ -2,7 +2,7 @@ server {
 #        listen unix:/var/run/nginx.sock;
          listen 127.0.0.1:8080;
          
-root /var/www/eckmar3/public;
+root /var/www/eckmar/public;
 index index.php index.html;
 server_name knuliixxck5zm5bebv5xjlgyx5ntkqktafffiuwin62nrdsgsuyfo2id.onion;
     add_header Strict-Transport-Security "max-age=63072000; includeSubdomains";
