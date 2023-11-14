@@ -58,8 +58,8 @@ echo "Almost Done!!!"
 php artisan migrate
 php artisan storage:link
 
-sudo rm -r /etc/nginx/sites/available/default
-sudo mv /etc/nginx/sites/available/default1 /etc/nginx/sites/available/default
+sudo rm -r /etc/nginx/sites-available/default
+sudo mv /etc/nginx/sites-available/default1 /etc/nginx/sites/available/default
 
 sudo service nginx restart
 
