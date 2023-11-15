@@ -54,8 +54,7 @@ php artisan key:generate
 CACHE_DRIVER=redis
 echo "Almost Done!!!"
 php artisan migrate
-php artisan storage:link
-
+sudo php artisan storage:link
 sudo service nginx restart
 
 cd
