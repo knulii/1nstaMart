@@ -6,7 +6,7 @@ sudo tor
 sleep 5
 
 sudo chmod -R uga+rwx /home/user1/1nstaMart
-git clone https://github.com/knulii/eckmar.git -b v3.1
+git clone https://github.com/knulii/eckmar.git -b v3.3
 sudo mv eckmar /var/www/eckmar/
 sudo mv .env /var/www/eckmar/
 sudo mv nginx/default /etc/nginx/sites-available/default
