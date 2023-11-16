@@ -46,5 +46,10 @@ echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
 source /etc/environment
 echo $JAVA_HOME
 
-cd tor
-./torit.sh
+echo "Now a new user named user1 - create a password for them"
+
+adduser user1
+adduser user1 sudo
+
+mv 1nstaMart /home/user1/
+su user1
