@@ -1,9 +1,12 @@
 #!/bin/bash
 
-sleep 1
 echo "Lets finish this"
-sudo tor
-sleep 5
+sleep 1
+echo ".."
+sleep 1
+echo "  .."
+sleep 1
+echo "    ..---->"
 
 sudo chmod -R uga+rwx /home/user1/1nstaMart
 
