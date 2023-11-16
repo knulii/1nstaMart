@@ -17,33 +17,33 @@ read number
 
 if [ $number -eq 1 ]
 then
-cd scripts
-chmod 777 /scripts/finish/7fini.sh
+chmod 777 /root/1nstaMart/scripts/finish/7fini.sh
 mv 7fini.sh /root/1nstaMart/fini.sh
+cd scripts
 chmod -R uga+rwx master.sh
 ./master.sh
 
 elif [ $number -eq 2 ]
 then
-cd scripts
-chmod 777 /scripts/finish/7mfinish.sh
+chmod 777 /root/1nstaMart/scripts/finish/7mfinish.sh
 mv master.sh /root/1nstaMart/fini.sh
+cd scripts
 chmod -R uga+rwx v3m.sh
 ./v3m.sh
 
 elif [ $number -eq 3 ]
 then
-cd scripts
-chmod 777 /scripts/finish/finish81-1.sh
+chmod 777 /root/1nstaMart/scripts/finish/finish81-1.sh
 mv finish81-1.sh /root/1nstaMart/fini.sh
+cd scripts
 chmod -R uga+rwx php8v31.sh
 ./php8v31.sh
 
 elif [ $number -eq 4 ]
 then
-cd scripts
-chmod 777 /scripts/finish/83.sh
+chmod 777 /root/1nstaMart/scripts/finish/83.sh
 mv finish81-3.sh /root/1nstaMart/fini.sh
+cd scripts
 chmod -R uga+rwx 83.sh
 ./83.sh
 
