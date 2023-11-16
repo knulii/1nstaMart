@@ -18,21 +18,21 @@ wget https://dist.torproject.org/tor-0.4.8.1-alpha.tar.gz
 tar -xf tor-0.4.8.1-alpha.tar.gz
 cd tor-0.4.8.1-alpha
 ./configure --enable-gpl && make -j12
-make install
+sudo make install
 
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
 
 cd ..
 
-cp -r nginx/default /etc/nginx/sites-available/default
+sudo cp -r nginx/default /etc/nginx/sites-available/default
 sudo service nginx restart
 
 sleep 5
-cp -r tor/torrc /usr/local/etc/tor/torrc
-mkdir /usr/local/etc/tor/hidden_service
-cp -r onions/onion1/* /usr/local/etc/tor/hidden_service
-chmod 600 /usr/local/etc/tor/hidden_service
-tor --list-modules
+sudo cp -r tor/torrc /usr/local/etc/tor/torrc
+sudo mkdir /usr/local/etc/tor/hidden_service
+sudo cp -r onions/onion1/* /usr/local/etc/tor/hidden_service
+sudo chmod 600 /usr/local/etc/tor/hidden_service
+sudo tor --list-modules
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
 sleep 5
 

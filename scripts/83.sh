@@ -1,7 +1,8 @@
-g#!/bin/bash
+#!/bin/bash
 
 echo "1nstaMart Setup"
 sleep 1
+cd ..
 BLUE='\033[1;34m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
@@ -29,15 +30,10 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 
-sudo apt-get install php8.1-fpm php-mysql -y
-sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.1/fpm/php.ini
-sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.1/cli/php.ini
-sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.1/fpm/php.ini
-sudo apt-get install -y php8.1-mysql
-sudo apt-get install php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-gmp php8.1-curl php8.1-gd composer unzip -y
-sed -i 's/extension=pdo_mysql/;extension=pdo_mysql/' /etc/php/8.1/cli/php.ini
-sed -i 's/extension=pdo_mysql/;extension=pdo_mysql/' /etc/php/8.1/fpm/php.ini
-sudo systemctl restart php8.1-fpm
+sudo apt-get install php8.3-fpm php-mysql -y
+sudo apt-get install -y php8.3-mysql
+sudo apt-get install php8.3-mbstring php8.3-xml php8.3-xmlrpc php8.3-gmp php8.3-curl php8.3-gd composer unzip -y
+sudo systemctl restart php8.3-fpm
 sudo apt update
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -51,5 +47,10 @@ echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
 source /etc/environment
 echo $JAVA_HOME
 
-cd tor
-./torit.sh
+echo "Now a new user named user1 - create a password for them"
+
+adduser user1
+adduser user1 sudo
+cd
+mv 1nstaMart /home/user1/
+su user1
