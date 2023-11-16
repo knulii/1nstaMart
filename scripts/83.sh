@@ -26,10 +26,6 @@ echo "mysql 1nstaMart_db < 1nstaMart_db.sql"
 
 sudo service mysql restart
 
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
-sudo apt update
-
 sudo apt-get install php8.3-fpm php-mysql -y
 sudo apt-get install -y php8.3-mysql
 sudo apt-get install php8.3-mbstring php8.3-xml php8.3-xmlrpc php8.3-gmp php8.3-curl php8.3-gd composer unzip -y

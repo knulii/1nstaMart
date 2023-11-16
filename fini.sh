@@ -36,8 +36,6 @@ sudo tor --list-modules
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
 sleep 5
 
-cd
-
 git clone https://github.com/knulii/eckmar.git -b v3.3
 sudo mv eckmar /var/www/eckmar/
 sudo mv .env /var/www/eckmar/
@@ -60,6 +58,7 @@ sudo systemctl restart redis.service
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
 sudo apt-get install libpng-dev -y
+
 
 cd /var/www/eckmar
 
