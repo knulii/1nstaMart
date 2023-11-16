@@ -50,6 +50,6 @@ echo "Now a new user named user1 - create a password for them"
 
 adduser user1
 adduser user1 sudo
-
+cd
 mv 1nstaMart /home/user1/
 su user1
