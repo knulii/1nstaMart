@@ -23,14 +23,15 @@ cd ..
 
 cp -r nginx/default /etc/nginx/sites-available/default
 sudo service nginx restart
-sleep 10
+
+sleep 5
 cp -r tor/torrc /usr/local/etc/tor/torrc
 mkdir /usr/local/etc/tor/hidden_service
 cp -r onions/onion1/* /usr/local/etc/tor/hidden_service
 chmod 600 /usr/local/etc/tor/hidden_service
 tor --list-modules
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
-sleep 10
+sleep 5
 
 cd
 
