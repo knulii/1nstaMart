@@ -26,7 +26,7 @@ chmod -R uga+rwx master.sh
 elif [ $number -eq 2 ]
 then
 chmod 777 /root/1nstaMart/scripts/finish/7mfinish.sh
-mv /root/1nstaMart/scripts/finish/master.sh /root/1nstaMart/fini.sh
+mv /root/1nstaMart/scripts/finish/7mfinish.sh /root/1nstaMart/fini.sh
 cd scripts
 chmod -R uga+rwx v3m.sh
 ./v3m.sh
