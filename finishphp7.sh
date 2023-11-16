@@ -1,12 +1,42 @@
 #!/bin/bash
 
-sleep 1
 echo "Lets finish this"
-sudo tor
-sleep 5
+sleep 1
+echo ".."
+sleep 1
+echo "  .."
+sleep 1
+echo "    ..---->"
 
 sudo chmod -R uga+rwx /home/user1/1nstaMart
-git clone https://github.com/knulii/eckmar.git -b v3.0
+
+sudo apt-get install libevent-dev libssl-dev -y
+sudo apt-get install -y tor nyx
+sudo apt-get install -y vanguards
+
+wget https://dist.torproject.org/tor-0.4.8.1-alpha.tar.gz
+tar -xf tor-0.4.8.1-alpha.tar.gz
+cd tor-0.4.8.1-alpha
+./configure --enable-gpl && make -j12
+sudo make install
+
+(crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
+
+cd ..
+
+sudo cp -r nginx/default /etc/nginx/sites-available/default
+sudo service nginx restart
+
+sleep 5
+sudo cp -r tor/torrc /usr/local/etc/tor/torrc
+sudo mkdir /usr/local/etc/tor/hidden_service
+sudo cp -r onions/onion1/* /usr/local/etc/tor/hidden_service
+sudo chmod 600 /usr/local/etc/tor/hidden_service
+sudo tor --list-modules
+(crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
+sleep 5
+
+git clone https://github.com/knulii/eckmar.git -b v3.3
 sudo mv eckmar /var/www/eckmar/
 sudo mv .env /var/www/eckmar/
 sudo mv nginx/default1 /etc/nginx/sites-available/default
@@ -29,6 +59,7 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y npm
 sudo apt-get install libpng-dev -y
 
+
 cd /var/www/eckmar
 
 sudo chown -R www-data:www-data /var/www/eckmar/public
@@ -44,7 +75,6 @@ sudo mkdir /var/www/eckmar/storage/public/products
 sudo chmod -R 755 /var/www/eckmar/storage/public/products
 sudo chgrp -R www-data /var/www/eckmar/storage/public/products
 sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
-
 
 composer update
 composer install
