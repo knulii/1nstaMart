@@ -41,7 +41,7 @@ chmod -R uga+rwx php8v31.sh
 
 elif [ $number -eq 4 ]
 then
-chmod 777 /root/1nstaMart/scripts/finish/83.sh
+chmod 777 /root/1nstaMart/scripts/finish/finish81-3.sh
 mv finish81-3.sh /root/1nstaMart/fini.sh
 cd scripts
 chmod -R uga+rwx 83.sh
