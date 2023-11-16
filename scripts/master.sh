@@ -41,16 +41,21 @@ sed -i 's/extension=pdo_mysql/;extension=pdo_mysql/' /etc/php/7.2/fpm/php.ini
 sudo systemctl restart php7.2-fpm
 sudo apt update
 
-sudo apt-get install openjdk-8-jdk -y
-echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
-source /etc/environment
-echo $JAVA_HOME
-
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 
-cd tor
-./torit.sh
+sudo apt-get install openjdk-8-jdk -y
+echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
+source /etc/environment
+echo $JAVA_HOME
+
+echo "Now a new user named user1 - create a password for them"
+
+adduser user1
+adduser user1 sudo
+cd
+mv 1nstaMart /home/user1/
+su user1
