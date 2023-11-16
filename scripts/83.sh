@@ -29,11 +29,13 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 
 sudo apt-get install php8.1-fpm php-mysql -y
-sudo apt-get install -y php8.1-mysql
-sudo apt-get install php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-gmp php8.1-curl php8.1-gd composer unzip -y
 sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/' /etc/php/8.1/fpm/php.ini
 sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.1/cli/php.ini
 sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/8.1/fpm/php.ini
+sudo apt-get install -y php8.1-mysql
+sudo apt-get install php8.1-mbstring php8.1-xml php8.1-xmlrpc php8.1-gmp php8.1-curl php8.1-gd composer unzip -y
+sed -i 's/extension=pdo_mysql/;extension=pdo_mysql/' /etc/php/8.1/cli/php.ini
+sed -i 's/extension=pdo_mysql/;extension=pdo_mysql/' /etc/php/8.1/fpm/php.ini
 sudo systemctl restart php8.1-fpm
 sudo apt update
 
