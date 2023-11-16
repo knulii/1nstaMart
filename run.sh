@@ -43,7 +43,7 @@ elif [ $number -eq 4 ]
 then
 cd scripts
 chmod 777 /finish/83.sh
-mv 83.sh /root/1nstaMart/fini.sh
+mv finish81-3.sh /root/1nstaMart/fini.sh
 chmod -R uga+rwx 83.sh
 ./83.sh
 
