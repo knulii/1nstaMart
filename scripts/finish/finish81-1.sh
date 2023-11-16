@@ -6,7 +6,9 @@ echo ".."
 sleep 1
 echo "  .."
 sleep 1
-echo "    ..---->"
+echo "    .."
+sleep 1
+echo "       ........... ..---->"
 
 sudo chmod -R uga+rwx /home/user1/1nstaMart
 
@@ -36,10 +38,10 @@ sudo tor --list-modules
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
 sleep 5
 
-git clone https://github.com/knulii/eckmar.git -b v3.3
+git clone https://github.com/knulii/eckmar.git -b v3.1
 sudo mv eckmar /var/www/eckmar/
 sudo mv .env /var/www/eckmar/
-sudo mv nginx/default1 /etc/nginx/sites-available/default
+sudo mv nginx/default /etc/nginx/sites-available/default
 
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.0.0.deb
 sudo dpkg -i elasticsearch-6.0.0.deb

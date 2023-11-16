@@ -34,8 +34,8 @@ chmod -R uga+rwx v3m.sh
 elif [ $number -eq 3 ]
 then
 cd scripts
-chmod 777 /finish/finish81-3.sh
-mv finish81-3.sh /root/1nstaMart/fini.sh
+chmod 777 /finish/finish81-1.sh
+mv finish81-1.sh /root/1nstaMart/fini.sh
 chmod -R uga+rwx php8v31.sh
 ./php8v31.sh
 
