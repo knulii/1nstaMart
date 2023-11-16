@@ -6,7 +6,9 @@ echo ".."
 sleep 1
 echo "  .."
 sleep 1
-echo "    ..---->"
+echo "    .."
+sleep 1
+echo "       ........... ..---->"
 
 sudo chmod -R uga+rwx /home/user1/1nstaMart
 
