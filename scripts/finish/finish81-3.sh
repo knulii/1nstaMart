@@ -86,7 +86,7 @@ php artisan key:generate
 CACHE_DRIVER=redis
 echo "Almost Done!!!"
 php artisan migrate
-sudo php artisan storage:link
+php artisan storage:link
 sudo service nginx restart
 sudo tor
 
