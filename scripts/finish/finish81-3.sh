@@ -72,8 +72,8 @@ sudo chown -R $USER:www-data /var/www/eckmar/storage
 sudo chown -R $USER:www-data /var/www/eckmar/bootstrap/cache
 sudo chmod -R 775 /var/www/eckmar/storage
 sudo chmod -R 775 /var/www/eckmar/bootstrap/cache
-sudo mkdir /var/www/eckmar/storage/public/
-sudo mkdir /var/www/eckmar/storage/public/products
+mkdir /var/www/eckmar/storage/public2/
+mkdir /var/www/eckmar/storage/public/products
 sudo chmod -R 755 /var/www/eckmar/storage/public/products
 sudo chgrp -R www-data /var/www/eckmar/storage/public/products
 sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
@@ -86,7 +86,7 @@ php artisan key:generate
 CACHE_DRIVER=redis
 echo "Almost Done!!!"
 php artisan migrate
-sudo php artisan storage:link
+php artisan storage:link
 sudo service nginx restart
 sudo tor
 
