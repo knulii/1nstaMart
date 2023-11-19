@@ -72,7 +72,7 @@ sudo chown -R $USER:www-data /var/www/eckmar/storage
 sudo chown -R $USER:www-data /var/www/eckmar/bootstrap/cache
 sudo chmod -R 775 /var/www/eckmar/storage
 sudo chmod -R 775 /var/www/eckmar/bootstrap/cache
-mkdir /var/www/eckmar/storage/public2/
+mkdir /var/www/eckmar/storage/public/
 mkdir /var/www/eckmar/storage/public/products
 sudo chmod -R 755 /var/www/eckmar/storage/public/products
 sudo chgrp -R www-data /var/www/eckmar/storage/public/products
