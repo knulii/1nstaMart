@@ -90,9 +90,7 @@ sudo php artisan storage:link
 sudo service nginx restart
 sudo tor
 
-cd
-cd 1nstaMart/xmr
-./monero.sh
+echo "All Done"
 
 
 
