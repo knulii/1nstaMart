@@ -18,7 +18,7 @@ sudo apt-get install mysql-server -y
 mysql_secure_installation
 
 mysql -e "CREATE DATABASE 1nstaMart_db DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
-mysql -e "CREATE USER 'user1'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pA3sw0Rd!!lmnop/';"
+mysql -e "CREATE USER 'user1'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pA3sw0Rd!!lmnop';"
 mysql -e "GRANT ALL PRIVILEGES ON * . * TO 'user1'@'localhost';"
 mysql -e "FLUSH PRIVILEGES;"
      echo "mysql 1nstaMart_db < 1nstaMart_db.sql"
