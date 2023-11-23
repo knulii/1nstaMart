@@ -4,12 +4,15 @@ will clean it up someday, but for now it works ;)
 
 This script will install an eckmar based market from head to toe:
 
+run.sh to start
+
+ php8 options will install
 tor 0.4.8.1
 php 8.1 
 laravel 9
 elasticsearch 6
 
-Highly scripted and only tested on Ubuntu 22.04
+Highly scripted and only tested on Ubuntu
 
 Can easily be edited for a nice and portable scrip for testing
 
@@ -33,8 +36,6 @@ to run, start as root with a fresh vps...
 
     cd 1nstaMart
 
-y
-y
     ./run.sh
 
 follow prompts
