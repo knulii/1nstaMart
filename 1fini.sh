@@ -38,10 +38,10 @@ sudo tor --list-modules
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
 sleep 5
 
-git clone https://github.com/knulii/eckmar.git -b v3.1
+git clone https://github.com/knulii/eckmar.git -b v3.0
 sudo mv eckmar /var/www/eckmar/
 sudo mv .env /var/www/eckmar/
-sudo mv nginx/default1 /etc/nginx/sites-available/default
+sudo mv nginx/default /etc/nginx/sites-available/default
 
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.0.0.deb
 sudo dpkg -i elasticsearch-6.0.0.deb
@@ -72,8 +72,8 @@ sudo chown -R $USER:www-data /var/www/eckmar/storage
 sudo chown -R $USER:www-data /var/www/eckmar/bootstrap/cache
 sudo chmod -R 775 /var/www/eckmar/storage
 sudo chmod -R 775 /var/www/eckmar/bootstrap/cache
-mkdir /var/www/eckmar/storage/public/
-mkdir /var/www/eckmar/storage/public/products
+sudo mkdir /var/www/eckmar/storage/public/
+sudo mkdir /var/www/eckmar/storage/public/products
 sudo chmod -R 755 /var/www/eckmar/storage/public/products
 sudo chgrp -R www-data /var/www/eckmar/storage/public/products
 sudo chmod -R ug+rwx /var/www/eckmar/storage/public/products
@@ -88,7 +88,6 @@ echo "Almost Done!!!"
 php artisan migrate
 sudo php artisan storage:link
 sudo service nginx restart
-sudo tor
 
 cd
 cd 1nstaMart/xmr
