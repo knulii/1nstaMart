@@ -38,7 +38,7 @@ sudo tor --list-modules
 (crontab -l 2>/dev/null; echo "@reboot sudo tor") | crontab -
 sleep 5
 
-git clone https://github.com/knulii/eckmar.git -b v3.1
+git clone https://github.com/knulii/eckmar.git -b v3.0
 sudo mv eckmar /var/www/eckmar/
 sudo mv .env /var/www/eckmar/
 sudo mv nginx/default1 /etc/nginx/sites-available/default
