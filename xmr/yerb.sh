@@ -13,8 +13,7 @@ tar -xvf yerbas-ubuntu20-v3.1.2.7.tar.gz
 
 cp -r yerbas-build /home/user1/yerbas-biuild
 mv test /home/user1/monero/test
-mv test.keys /home/user1/monero/test.keys
-sudo chmod 777 /home/user1/monero/test.keys
+
 sudo chmod 777 /home/user1/monero/test
 cd
 
