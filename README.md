@@ -4,6 +4,8 @@ will clean it up someday, but for now it works ;)
 
 This script will install an eckmar based market from head to toe:
 
+For use on ubuntu 18-22
+
 run.sh to start
 
  php8 options will install
